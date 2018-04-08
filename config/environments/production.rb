@@ -34,7 +34,7 @@ Rails.application.configure do
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
   # config.action_cable.url = 'wss://example.com/cable'
-  # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
+   config.action_cable.allowed_request_origins = [ 'https://chatster-app-api.herokuapp.com', 'http://chatster-app-api.herokuapp.com' ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
@@ -67,6 +67,8 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.web_socket_server_url = "wss://chatster-app-api.herokuapp.com/cable"
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'

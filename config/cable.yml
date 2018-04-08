@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: redis://localhost:6379/1
+  url: redis://redistogo:18bd3e4a6f509fbf5a40fdb6da9ec666@soldierfish.redistogo.com:11056/
   channel_prefix: chat-app-api_production
