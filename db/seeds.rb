@@ -6,32 +6,43 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.all.each_with_index  do |u, i|
+  u.update(avatar: avatars[i])
+  u.save
+end
+
+User.all.each_with_index  do |u, i|
+  puts u.avatar
+  puts i
+  puts avatars[i]
+end
+
 avatars = [
-"lib/avatars/Abraham.jpg",
-"lib/avatars/elliot.jpg",
-"lib/avatars/joe.jpg",
-"lib/avatars/matt.jpg",
-"lib/avatars/rachel.jpg",
-"lib/avatars/ade.jpg",
-"lib/avatars/elyse.jpg",
-"lib/avatars/justen.jpg",
-"lib/avatars/matthew.jpg",
-"lib/avatars/steve.jpg",
-"lib/avatars/chris.jpg",
-"lib/avatars/eve.jpg",
-"lib/avatars/kristy.jpg",
-"lib/avatars/molly.jpg",
-"lib/avatars/stevie.jpg",
-"lib/avatars/christian.jpg",
-"lib/avatars/helen.jpg",
-"lib/avatars/laura.jpg",
-"lib/avatars/nan.jpg",
-"lib/avatars/tom.jpg",
-"lib/avatars/daniel.jpg",
-"lib/avatars/jenny.jpg",
-"lib/avatars/mark.jpg",
-"lib/avatars/patrick.jpg",
-"lib/avatars/veronika.jpg"
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/Abraham.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/elliot.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/joe.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/matt.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/rachel.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/ade.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/elyse.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/justen.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/matthew.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/steve.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/chris.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/eve.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/kristy.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/molly.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/stevie.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/christian.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/helen.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/laura.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/nan.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/tom.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/daniel.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/jenny.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/mark.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/patrick.jpg",
+"https://raw.githubusercontent.com/siobhanpmahoney/heroku-chatster-frontend/master/src/components/lib/avatars/veronika.jpg"
 ]
 
 
