@@ -6,8 +6,8 @@ class User < ApplicationRecord
   has_many :messages
 
   has_secure_password
-  validates :username, presence: true
-  validates :password, presence: true
+  # validates :username, presence: true
+  # validates :password, presence: true
 
 
   def message_attributes=(message_attributes)
