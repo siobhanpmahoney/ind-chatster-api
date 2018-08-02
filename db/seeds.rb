@@ -46,6 +46,14 @@ avatars = [
 ]
 
 
+Message.all.map {|m| puts "#{m.created_at} — #{m.content}"}
+
+User.all.map {|c| puts "#{c.created_at} — #{c.username}"}
+
+
+
+
+
 User.all.each do |u|
   u.update(avatar: avatars.sample)
   u.save
