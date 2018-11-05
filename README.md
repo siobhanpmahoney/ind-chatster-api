@@ -1,4 +1,4 @@
-## *Note*: This project houses the backend code for [Chatster](https://chatster-app.herokuapp.com/login). Please refer to this [repo](https://github.com/siobhanpmahoney/heroku-chatster-frontend) for the project's frontend code and installation instructions.
+## *Note*: This project houses the __backend__ code for [Chatster](https://chatster-app.herokuapp.com/login). Please refer to this [repo](https://github.com/siobhanpmahoney/heroku-chatster-frontend) for the project's frontend code and installation instructions.
 
 # Chatster.
 
